@@ -135,6 +135,7 @@
 const double pitchbend_center = 8192.0;
 #define PITCHBEND_MAX 16383
 
+#include "defaulti.hpp"
 #include "midiio.hpp"
 #include <stdlib.h>
 #include <string.h>
@@ -164,6 +165,7 @@ bool bUsePitchBends = true; // use pitch bends to better match MIDI note frequen
 bool bApproximatePitchbends = false; // if pitchbends are disabled, should we approximate them by playing the nearest note when the pitch changes?
 bool bPerfectMatchesOnly = false;  // if true, only match perfect instruments
 bool bEnableVolume = true; // enable note velocity based on OPL instrument volume
+bool bDukeNukemIISpeed = false; // Change initial speed to 260Hz
 
 // Rhythm instruments
 enum RHYTHM_INSTRUMENT {
@@ -329,6 +331,7 @@ void usage()
 		"  -k      Change the drumkit using GS mapping (default is 1 = standard)\n"
 		"  -l/m/n  Equalize the length of the last two measures of the song (ch = channel to track,\n"
 		"          m = # of notes in last measure, n = # of notes in second-to-the-last measure)\n"
+		"  -d      Change initial speed of IMF to 260Hz (Only used by Duke Nukem II)\n"
 		"\n"
 		"Supported input formats:\n"
 		" .raw  Rdos RAW OPL capture\n"
@@ -383,7 +386,10 @@ bool loadInstruments(void)
 	FILE* p = fopen(PATCH_NAME_FILE, "r");
 	if (!p) {
 		fprintf(stderr, "Warning: Unable to open file listing patch names ("
-			PATCH_NAME_FILE ")\nInstrument names will not be available.\n");
+			PATCH_NAME_FILE ")\nInstrument names will be set to GM default names.\n");
+		for (int i = 0; i < 128; i++){
+				snprintf(cPatchName[i], INSTR_NAMELEN, "%s [%d]", DEFAULT_GM_PATCH_NAMES[i], i+1);
+		}
 	} else {
 		while (fgets(line, sizeof(line)-1, p)) {
 			int iValue, iLen;
@@ -402,7 +408,10 @@ bool loadInstruments(void)
 	p = fopen(PERC_NAME_FILE, "r");
 	if (!p) {
 		fprintf(stderr, "Warning: Unable to open file listing percussion note "
-			"names (" PERC_NAME_FILE ")\nPercussion names will not be available.\n");
+			"names (" PERC_NAME_FILE ")\nPercussion names will be set to GM default names.\n");
+		for (int i = 35; i < 83; i++){
+				snprintf(cPercName[i], INSTR_NAMELEN, "%s [%d]", DEFAULT_GM_PERC_NAMES[i-35], i);
+		}
 	} else {
 		while (fgets(line, sizeof(line)-1, p)) {
 			int iValue, iLen;
@@ -1272,6 +1281,8 @@ int main(int argc, char**argv)
 				fprintf(stderr, "-n requires a parameter between 1 and %d\n", NOTE_ON_QUEUE_SIZE - 1);
 				usage();
 			}
+		} else if (strncasecmp(*argv, "-d", 2) == 0){
+			::bDukeNukemIISpeed = true;
 		} else if (strncasecmp(*argv, "--version", 9) == 0) {
 			version();
 			return 0;
@@ -1296,7 +1307,11 @@ int main(int argc, char**argv)
 		fprintf(stderr, "cannot convert to same file\n");
 		return 1;
 	}
-
+	if (::bDukeNukemIISpeed && strcasecmp(&input[strlen(input)-3], "imf") != 0)
+	{
+		fprintf(stderr, "-d can only be used with IMF files.\n");
+		return 1;
+	}
 	if (!loadInstruments()) return 1;
 
 
@@ -1358,9 +1373,12 @@ int main(int argc, char**argv)
 			imflen = cSig[0] + (cSig[1] << 8);
 			fseek(f, 2, SEEK_SET); // seek to start of actual OPL data
 		}
-		if (strcasecmp(&input[strlen(input)-3], "imf") == 0) {
+		if (::bDukeNukemIISpeed == true){
+			printf("File extension is .imf && -d is set - using 260Hz speed\n");
+			::iInitialSpeed = 260;
+		} else if (strcasecmp(&input[strlen(input)-3], "imf") == 0) {
 			printf("File extension is .imf - using 560Hz speed (rename to .wlf if "
-				"this is too slow)\n");
+				"this is too slow,\nor set -d if this is too fast\n");
 			::iInitialSpeed = 560;
 		} else if (strcasecmp(&input[strlen(input)-3], "wlf") == 0) {
 			printf("File extension is .wlf - using 700Hz speed (rename to .imf if "
