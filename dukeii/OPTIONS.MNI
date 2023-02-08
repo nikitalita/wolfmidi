@@ -1,0 +1,363 @@
+
+My_Options
+
+//FADEOUT
+//LOADRAW MESSAGE.MNI
+//XYTEXT 0 0 Ô18000
+//XYTEXT 11 7 ÚPC Sounds
+//XYTEXT 11 9 ÚSoundblaster Sounds
+//XYTEXT 11 11 ÚAdLib Sounds
+//XYTEXT 11 13 ÚMusic
+//XYTEXT 11 15 ÚConfigure Keyboard
+//XYTEXT 11 17 ÚCalibrate Joystick
+//XYTEXT 11 19 ÚGame Speed
+//TOGGS 11 4 7 P 9 S 11 L 13 M
+
+//MENU 3
+
+//PAGESSTART
+//Z 7
+//XYTEXT 11 19 ÚGame Speed
+//XYTEXT 11 7 ÛPC Sounds
+//XYTEXT 11 9 ÚSoundblaster Sounds
+//WAIT
+
+//APAGE
+//Z 9
+//XYTEXT 11 7 ÚPC Sounds
+//XYTEXT 11 9 ÛSoundblaster Sounds
+//XYTEXT 11 11 ÚAdLib Sounds
+//WAIT
+
+//APAGE
+//XYTEXT 11 9 ÚSoundblaster Sounds
+//XYTEXT 11 11 ÛAdLib Sounds
+//XYTEXT 11 13 ÚMusic
+//Z 11
+//WAIT
+
+//APAGE
+//XYTEXT 11 11 ÚAdLib Sounds
+//XYTEXT 11 13 ÛMusic
+//XYTEXT 11 15 ÚConfigure Keyboard
+//Z 13
+//WAIT
+
+//APAGE
+//XYTEXT 11 13 ÚMusic
+//XYTEXT 11 15 ÛConfigure Keyboard
+//XYTEXT 11 17 ÚCalibrate Joystick
+//Z 15
+//WAIT
+
+//APAGE
+//XYTEXT 11 15 ÚConfigure Keyboard
+//XYTEXT 11 17 ÛCalibrate Joystick
+//XYTEXT 11 19 ÚGame Speed
+//Z 17
+//WAIT
+
+//APAGE
+//XYTEXT 11 17 ÚCalibrate Joystick
+//XYTEXT 11 19 ÛGame Speed
+//XYTEXT 11 7 ÚPC Sounds
+//Z 19
+//WAIT
+//PAGESEND
+//END
+
+Save_Game
+
+//FADEOUT
+//LOADRAW MESSAGE.MNI
+//XYTEXT 0 0 Ô17900
+//XYTEXT 9 6 Ú1
+//XYTEXT 9 8 Ú2
+//XYTEXT 9 10 Ú3
+//XYTEXT 9 12 Ú4
+//XYTEXT 9 14 Ú5
+//XYTEXT 9 16 Ú6
+//XYTEXT 9 18 Ú7
+//XYTEXT 9 20 Ú8
+//MENU 6
+
+
+//PAGESSTART
+//Z 6
+//XYTEXT 9 20 Ú8
+//XYTEXT 9 6 Û1
+//XYTEXT 9 8 Ú2
+//GETNAMES 0
+//WAIT
+
+//APAGE
+//Z 8
+//XYTEXT 9 6 Ú1
+//XYTEXT 9 8 Û2
+//XYTEXT 9 10 Ú3
+//GETNAMES 1
+//WAIT
+
+//APAGE
+//Z 10
+//XYTEXT 9 8 Ú2
+//XYTEXT 9 10 Û3
+//XYTEXT 9 12 Ú4
+//GETNAMES 2
+//WAIT
+
+//APAGE
+//Z 12
+//XYTEXT 9 10 Ú3
+//XYTEXT 9 12 Û4
+//XYTEXT 9 14 Ú5
+//GETNAMES 3
+//WAIT
+
+//APAGE
+//Z 14
+//XYTEXT 9 12 Ú4
+//XYTEXT 9 14 Û5
+//XYTEXT 9 16 Ú6
+//GETNAMES 4
+//WAIT
+
+//APAGE
+//Z 16
+//XYTEXT 9 14 Ú5
+//XYTEXT 9 16 Û6
+//XYTEXT 9 18 Ú7
+//GETNAMES 5
+//WAIT
+
+//APAGE
+//Z 18
+//XYTEXT 9 16 Ú6
+//XYTEXT 9 18 Û7
+//XYTEXT 9 20 Ú8
+//GETNAMES 6
+//WAIT
+
+//APAGE
+//Z 20
+//XYTEXT 9 18 Ú7
+//XYTEXT 9 20 Û8
+//XYTEXT 9 6 Ú1
+//GETNAMES 7
+//WAIT
+//PAGESEND
+//END
+
+
+Restore_Game
+
+//FADEOUT
+//LOADRAW MESSAGE.MNI
+//XYTEXT 0 0 Ô17800
+//XYTEXT 9 6 Ú1
+//XYTEXT 9 8 Ú2
+//XYTEXT 9 10 Ú3
+//XYTEXT 9 12 Ú4
+//XYTEXT 9 14 Ú5
+//XYTEXT 9 16 Ú6
+//XYTEXT 9 18 Ú7
+//XYTEXT 9 20 Ú8
+//MENU 5
+
+//PAGESSTART
+//Z 6
+//XYTEXT 9 20 Ú8
+//XYTEXT 9 6 Û1
+//XYTEXT 9 8 Ú2
+//GETNAMES 0
+//WAIT
+
+//APAGE
+//Z 8
+//XYTEXT 9 6 Ú1
+//XYTEXT 9 8 Û2
+//XYTEXT 9 10 Ú3
+//GETNAMES 1
+//WAIT
+
+//APAGE
+//Z 10
+//XYTEXT 9 8 Ú2
+//XYTEXT 9 10 Û3
+//XYTEXT 9 12 Ú4
+//GETNAMES 2
+//WAIT
+
+//APAGE
+//Z 12
+//XYTEXT 9 10 Ú3
+//XYTEXT 9 12 Û4
+//XYTEXT 9 14 Ú5
+//GETNAMES 3
+//WAIT
+
+//APAGE
+//Z 14
+//XYTEXT 9 12 Ú4
+//XYTEXT 9 14 Û5
+//XYTEXT 9 16 Ú6
+//GETNAMES 4
+//WAIT
+
+//APAGE
+//Z 16
+//XYTEXT 9 14 Ú5
+//XYTEXT 9 16 Û6
+//XYTEXT 9 18 Ú7
+//GETNAMES 5
+//WAIT
+
+//APAGE
+//Z 18
+//XYTEXT 9 16 Ú6
+//XYTEXT 9 18 Û7
+//XYTEXT 9 20 Ú8
+//GETNAMES 6
+//WAIT
+
+//APAGE
+//Z 20
+//XYTEXT 9 18 Ú7
+//XYTEXT 9 20 Û8
+//XYTEXT 9 6 Ú1
+//GETNAMES 7
+//WAIT
+//PAGESEND
+//END
+
+Key_Config
+
+//FADEOUT
+//LOADRAW MESSAGE.MNI
+//XYTEXT 0 0 Ô26600
+//KEYS
+//XYTEXT 9 7 ÚFire...........
+//XYTEXT 9 9 ÚJump...........
+//XYTEXT 9 11   ÚUp...........
+//XYTEXT 9 13 ÚDown...........
+//XYTEXT 9 15 ÚLeft...........
+//XYTEXT 9 17 ÚRight..........
+//MENU 7
+
+
+//PAGESSTART
+//Z 7
+//XYTEXT 9 17 ÚRight..........
+//XYTEXT 9 7 ÛFire...........
+//XYTEXT 9 9 ÚJump...........
+//WAIT
+
+//APAGE
+//Z 9
+//XYTEXT 9 7 ÚFire...........
+//XYTEXT 9 9 ÛJump...........
+//XYTEXT 9 11   ÚUp...........
+//WAIT
+
+//APAGE
+//Z 11
+//XYTEXT 9 9 ÚJump...........
+//XYTEXT 9 11   ÛUp...........
+//XYTEXT 9 13 ÚDown...........
+//WAIT
+
+//APAGE
+//Z 13
+//XYTEXT 9 11   ÚUp...........
+//XYTEXT 9 13 ÛDown...........
+//XYTEXT 9 15 ÚLeft...........
+//WAIT
+
+//APAGE
+//Z 15
+//XYTEXT 9 13 ÚDown...........
+//XYTEXT 9 15 ÛLeft...........
+//XYTEXT 9 17 ÚRight..........
+//WAIT
+
+//APAGE
+//Z 17
+//XYTEXT 9 15 ÚLeft...........
+//XYTEXT 9 17 ÛRight..........
+//XYTEXT 9 7 ÚFire...........
+//WAIT
+//PAGESEND
+//END
+
+No_Game_Restore
+
+//CENTERWINDOW 5 7 32
+//SKLINE
+//CWTEXT No saved game at this spot.
+//SKLINE
+//CWTEXT Press ANY key.
+//WAIT
+//END
+
+Not_In_Game
+
+//SETCURRENTPAGE
+//CENTERWINDOW 5 7 32
+//SKLINE
+//CWTEXT SORRY..
+//CWTEXT You are not in a game.
+//CWTEXT Press ANY key.
+//WAIT
+//END
+
+&Calibrate
+
+//CENTERWINDOW 4 12 34
+//END
+
+
+Game_Speed
+
+//LOADRAW MESSAGE.MNI
+//XYTEXT 0 0 Ô30100
+//XYTEXT 3 14 Ô29500
+//MENU 8
+
+//PAGESSTART
+//XYTEXT 3 14 Ô29500
+//XYTEXT 9 11 Ô29501
+//WAIT
+
+//APAGE
+//XYTEXT 3 14 Ô29500
+//XYTEXT 12 11 Ô29501
+//WAIT
+
+//APAGE
+//XYTEXT 3 14 Ô29500
+//XYTEXT 15 11 Ô29501
+//WAIT
+
+//APAGE
+//XYTEXT 3 14 Ô29500
+//XYTEXT 18 11 Ô29501
+//WAIT
+
+//APAGE
+//XYTEXT 3 14 Ô29500
+//XYTEXT 21 11 Ô29501
+//WAIT
+
+//APAGE
+//XYTEXT 3 14 Ô29500
+//XYTEXT 24 11 Ô29501
+//WAIT
+
+//APAGE
+//XYTEXT 3 14 Ô29500
+//XYTEXT 27 11 Ô29501
+//WAIT
+//PAGESEND
+//END
+
+

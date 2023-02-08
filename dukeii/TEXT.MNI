@@ -1,0 +1,726 @@
+
+Full_Health
+
+//SETCURRENTPAGE
+//SHIFTWIN -3
+//CENTERWINDOW 5 7 28
+//SKLINE
+//CWTEXT Health restored.
+//SKLINE
+//CWTEXT Score reset to zero.
+//WAIT
+//END
+
+
+Password
+
+//FADEOUT
+//LOADRAW MESSAGE.MNI
+//XYTEXT 10 6 Version 1.7
+//XYTEXT 10 8 Enter Password
+//FADEIN
+//END
+
+
+
+
+Quit_Select
+
+//SETCURRENTPAGE
+//SETKEYS 1
+//CENTERWINDOW 5 6 24
+//SKLINE
+//CWTEXT Are you sure you
+//CWTEXT want to quit?
+//WAIT
+//END
+
+
+2Quit_Select
+
+//SETCURRENTPAGE
+//SETKEYS 1
+//SHIFTWIN -3
+//CENTERWINDOW 5 6 24
+//SKLINE
+//CWTEXT Are you sure you
+//CWTEXT want to quit?
+//WAIT
+//END
+
+
+Paused
+
+//SETCURRENTPAGE
+//SHIFTWIN
+//CENTERWINDOW 5 5 16
+//SKLINE
+//CWTEXT Game Paused.
+//WAIT
+//DELAY 30
+//END
+
+Music_On
+
+//SETCURRENTPAGE
+//SHIFTWIN
+//CENTERWINDOW 5 5 16
+//SKLINE
+//CWTEXT Music ON.
+//WAIT
+//END
+
+Music_Off
+
+//SETCURRENTPAGE
+//SHIFTWIN
+//CENTERWINDOW 5 5 16
+//SKLINE
+//CWTEXT Music OFF.
+//WAIT
+//END
+
+Sound_On
+
+//SETCURRENTPAGE
+//SHIFTWIN
+//CENTERWINDOW 5 5 16
+//SKLINE
+//CWTEXT Sound ON.
+//WAIT
+//END
+
+Sound_Off
+
+//SETCURRENTPAGE
+//SHIFTWIN
+//CENTERWINDOW 5 5 16
+//SKLINE
+//CWTEXT Sound OFF.
+//WAIT
+//END
+
+&Save
+
+//CENTERWINDOW 5 5 20
+//SKLINE
+//CWTEXT SAVING!!
+//SKLINE
+//DELAY 15
+//END
+
+&Load
+
+//CENTERWINDOW 5 5 26
+//SKLINE
+//CWTEXT Restoring!
+//SKLINE
+//DELAY 15
+
+//END
+
+
+
+Skill_Select
+
+//FADEOUT
+//LOADRAW MESSAGE.MNI
+//XYTEXT 0 0 Ô28300
+//MENU 0
+
+
+//PAGESSTART
+//Z 9
+//XYTEXT 9 9 ÛEasy
+//XYTEXT 9 12 ÚMedium
+//XYTEXT 9 15 ÚHard
+//XYTEXT 5 18                               
+//XYTEXT 5 19                               
+//XYTEXT 6 18  Less enemies, more powerups.
+//WAIT
+
+//APAGE
+//Z 12
+//XYTEXT 9 9 ÚEasy
+//XYTEXT 9 12 ÛMedium
+//XYTEXT 9 15 ÚHard
+//XYTEXT 5 18                               
+//XYTEXT 5 19                               
+//WAIT
+
+//APAGE
+//Z 15
+//XYTEXT 9 9 ÚEasy
+//XYTEXT 9 12 ÚMedium
+//XYTEXT 9 15 ÛHard
+//XYTEXT 5 18                               
+//XYTEXT 5 19                               
+//XYTEXT 10 18 Tougher/more enemies.
+//XYTEXT 10 19    Less powerups.
+//WAIT
+//PAGESEND
+//END
+
+Episode_Select
+
+//FADEOUT
+//GETPAL GAMEPAL.PAL
+//XYTEXT 3 22 Ô29800
+//XYTEXT 0 0 Ô28500
+//MENU 2
+
+
+//PAGESSTART
+//XYTEXT 0 1 Ô26700
+//WAIT
+
+//APAGE
+//XYTEXT 0 1 Ô26800
+//WAIT
+
+//APAGE
+//XYTEXT 0 1 Ô26900
+//WAIT
+
+//APAGE
+//XYTEXT 0 1 Ô27000
+//WAIT
+//PAGESEND
+//END
+
+
+
+
+Beta_Only
+
+//FADEOUT
+//LOADRAW MESSAGE.MNI
+//XYTEXT 0 0 Ô28100
+//PAK
+//XYTEXT 5 9  This is a BETA COPY of Duke
+//XYTEXT 5 10  Nukem II. Do not distribute.
+//XYTEXT 5 11  This game is work in progress
+//XYTEXT 5 12  and should not be viewed
+//XYTEXT 5 13  by anyone outside Apogee!
+//XYTEXT 5 15  Please report any illegal
+//XYTEXT 5 16  use to Apogee Software at
+//XYTEXT 5 17  1-214-278-5655.
+//FADEIN
+//WAIT
+//END
+
+
+Main_Menu
+
+//FADEOUT
+//LOADRAW MESSAGE.MNI
+//SETKEYS "#.
+//XYTEXT 0 0 Ô03000
+//EXITTODEMO
+//XYTEXT 9 6 ÚStart A New Game
+//XYTEXT 9 8 ÚRestore A Game
+//XYTEXT 9 10 ÚGame Options
+//XYTEXT 9 12 ¯Ordering Information
+//XYTEXT 9 14 ÚInstructions And Story
+//XYTEXT 9 16 ÚHigh Scores
+//XYTEXT 9 18 ÚCredits
+//XYTEXT 9 20 ÚQuit Game
+//MENU 1
+
+
+//PAGESSTART
+//Z 6
+//XYTEXT 9 20 ÚQuit Game
+//XYTEXT 9 6 ÛStart A New Game
+//XYTEXT 9 8 ÚRestore A Game
+//WAIT
+
+//APAGE
+//Z 8
+//XYTEXT 9 6 ÚStart A New Game
+//XYTEXT 9 8 ÛRestore A Game
+//XYTEXT 9 10 ÚGame Options
+//WAIT
+
+//APAGE
+//Z 10
+//XYTEXT 9 8 ÚRestore A Game
+//XYTEXT 9 10 ÛGame Options
+//XYTEXT 9 12 ¯Ordering Information
+//WAIT
+
+//APAGE
+//Z 12
+//XYTEXT 9 10 ÚGame Options
+//XYTEXT 9 12 ÛOrdering Information
+//XYTEXT 9 14 ÚInstructions And Story
+//WAIT
+
+//APAGE
+//Z 14
+//XYTEXT 9 12 ¯Ordering Information
+//XYTEXT 9 14 ÛInstructions And Story
+//XYTEXT 9 16 ÚHigh Scores
+//WAIT
+
+//APAGE
+//Z 16
+//XYTEXT 9 14 ÚInstructions And Story
+//XYTEXT 9 16 ÛHigh Scores
+//XYTEXT 9 18 ÚCredits
+//WAIT
+
+//APAGE
+//Z 18
+//XYTEXT 9 16 ÚHigh Scores
+//XYTEXT 9 18 ÛCredits
+//XYTEXT 9 20 ÚQuit Game
+//WAIT
+
+//APAGE
+//Z 20
+//XYTEXT 9 18 ÚCredits
+//XYTEXT 9 20 ÛQuit Game
+//XYTEXT 9 6 ÚStart A New Game
+//WAIT
+//PAGESEND
+//END
+
+
+
+Volume1
+
+//FADEOUT
+//LOADRAW MESSAGE.MNI
+//PAK
+//XYTEXT 0 0 Ô28200
+//XYTEXT 0 0 Ô28600
+//END
+
+Volume2
+
+//FADEOUT
+//LOADRAW MESSAGE.MNI
+//PAK
+//XYTEXT 0 0 Ô28200
+//XYTEXT 0 0 Ô28700
+//END
+
+Volume3
+
+//FADEOUT
+//LOADRAW MESSAGE.MNI
+//PAK
+//XYTEXT 0 0 Ô28200
+//XYTEXT 0 0 Ô28800
+//END
+
+Volume4
+
+//FADEOUT
+//LOADRAW MESSAGE.MNI
+//PAK
+//XYTEXT 0 0 Ô28200
+//XYTEXT 0 0 Ô28900
+//END
+
+
+
+New_Highscore
+
+//FADEOUT
+//LOADRAW MESSAGE.MNI
+//XYTEXT 0 0 Ô28200
+//XYTEXT 9 8 ˙A NEW HIGH SCORE!!
+//XYTEXT 8 10 ˙ENTER 15 LETTERS MAX.
+//FADEIN
+//END
+
+
+
+Both_S_I
+
+//FADEOUT
+//LOADRAW MESSAGE.MNI
+//XYTEXT 0 0 Ô28400
+//XYTEXT 9 10 ÚInstructions
+//XYTEXT 9 14 ÚStory
+//FADEIN
+
+//PAGESSTART
+//Z 10
+//XYTEXT 9 10 ÛInstructions
+//XYTEXT 9 14 ÚStory
+//WAIT
+
+//APAGE
+//Z 14
+//XYTEXT 9 10 ÚInstructions
+//XYTEXT 9 14 ÛStory
+//WAIT
+//PAGESEND
+//END
+
+&Story
+
+//NOSOUNDS
+//FADEOUT
+//LOADRAW STORY.MNI
+//FADEIN
+//BABBLEON 50
+//XYTEXT 1 21 "Ladies and gentlemen, one of our
+//XYTEXT 1 22 nation's heroes has disappeared!"
+//DELAY 600
+//LOADRAW STORY.MNI
+//BABBLEON 32
+//XYTEXT 1 21 "While Duke was being interviewed
+//XYTEXT 1 22 on television about his new book..."
+//DELAY 200
+//XYTEXT 0 0 Ô27600
+//DELAY 500
+//LOADRAW STORY.MNI
+//BABBLEON 36
+//XYTEXT 1 21 ...Mr. Nukem was abducted by an
+//XYTEXT 1 22 unknown force."
+//DELAY 200
+//XYTEXT 0 0 Ô27602
+//DELAY 500
+//LOADRAW STORY.MNI
+//BABBLEON 50
+//XYTEXT 1 21 "In other news, there's a four
+//XYTEXT 1 22 mile-wide UFO floating over Los
+//XYTEXT 1 23 Angeles."
+//DELAY 200
+//XYTEXT 0 0 Ô27601
+//DELAY 700
+//LOADRAW STORY.mni
+//BABBLEON 68
+              1234567890123456789012345678901234567890
+//XYTEXT 1 21 "We'll be back after this commercial
+//XYTEXT 1 22 break with a cute little story about
+//XYTEXT 1 23 a three-legged dog who saved a baby."
+//DELAY 1100
+//BABBLEOFF
+//FADEOUT
+//GETPAL STORY2.PAL
+//XYTEXT 1 10 MEANWHILE ON THE EVIL RIGELATIN SHIP...
+//FADEIN
+//DELAY 400
+//FADEOUT
+//GETPAL STORY2.PAL
+//XYTEXT 1 11 Ô27700
+//XYTEXT 12 6       "Hey, where am I?
+//XYTEXT 12 7        What is this?
+//XYTEXT 12 8        This isn't TV!"
+//FADEIN
+//DELAY 900
+//FADEOUT
+
+//GETPAL STORY2.PAL
+//XYTEXT 15 12 Ô27701
+	      +----+----+----+----+----+----+----+----
+//XYTEXT 1 15 "As the evil conqueror here, I believe
+//XYTEXT 1 16  it's my place to tell you why you're
+//XYTEXT 1 17   being abducted and will have to go
+//XYTEXT 1 18   through years of painful torture."
+//FADEIN
+//DELAY 1200
+//FADEOUT
+//GETPAL STORY2.PAL
+	      +----+----+----+----+----+----+----+----
+//XYTEXT 1 11 Ô27700
+//XYTEXT 13 3 "Sorry, buster!  No can do.
+//XYTEXT 13 4  I'll just break free,
+//XYTEXT 13 5  kick-butt, and be on my
+//XYTEXT 13 6  way..."
+//FADEIN
+//DELAY 1100
+//XYTEXT 27 22 Ô27702
+//XYTEXT 1 15 "Mr. Nukem, please save
+//XYTEXT 1 16  your energy for the
+//XYTEXT 1 17  torture room.  You see,
+//XYTEXT 1 18  you are about to take an
+//XYTEXT 1 19  important place in
+//XYTEXT 1 20  Earth's history."
+//DELAY 1100
+//FADEOUT
+
+//GETPAL STORY2.PAL
+	      +----+----+----+----+----+----+----+----
+//XYTEXT 1 11 Ô27703
+//XYTEXT 13 4  Too late, Veinhead! I've
+//XYTEXT 13 5  already been immortalized
+//XYTEXT 13 6  by defeating Dr. Proton
+//XYTEXT 13 7  last year.  But, what did
+//XYTEXT 13 8  you have in mind?
+//FADEIN
+//DELAY 1100
+//FADEOUT
+//GETPAL STORY2.PAL
+//XYTEXT 15 11 Ô27701
+	      +----+----+----+----+----+----+----+----
+//XYTEXT 0 14               "Your BRAIN.
+//XYTEXT 0 15  You see, we're going to use our famous
+//XYTEXT 0 16   SuperMega EncephaloSucker to imprint
+//XYTEXT 0 17        your brain patterns on our
+//XYTEXT 0 18       X5G Thinkomatic War Computer.
+//XYTEXT 0 19     You're going to win a war against
+//XYTEXT 0 20              Earth for us."
+//FADEIN
+//DELAY 2000
+//FADEOUT
+
+//GETPAL STORY2.PAL
+	      +----+----+----+----+----+----+----+----
+//XYTEXT 1 11 Ô27700
+//XYTEXT 13 5 "So I'm just supposed to
+//XYTEXT 13 6  sit by while my brain
+//XYTEXT 13 7  patterns conquer Earth?
+//XYTEXT 13 8  Yeah, right."
+//FADEIN
+//DELAY 1100
+//XYTEXT 27 22 Ô27702
+//XYTEXT 2 16 "You won't have much of a
+//XYTEXT 2 17  a choice, considering
+//XYTEXT 2 18  the end result is
+//XYTEXT 2 19  permanent, irreversible
+//XYTEXT 2 20  brain damage."
+//DELAY 1100
+//FADEOUT
+
+//GETPAL STORY2.PAL
+//XYTEXT 15 11 Ô27701
+	      +----+----+----+----+----+----+----+----
+//XYTEXT 0 14 "Well, okay, more like brain disruption.
+//XYTEXT 0 15  Oh, and you'll be in a perpetual state
+//XYTEXT 0 16  of pain without being able to move any
+//XYTEXT 0 17  limbs.  We'd kill you, you see, but our
+//XYTEXT 0 18  religion prevents the interruption of
+//XYTEXT 0 19                suffering.
+//XYTEXT 0 22             Goodbye, Duke...
+//FADEIN
+//DELAY 2000
+//FADEOUT
+
+
+//GETPAL STORY2.PAL
+//XYTEXT 15 11 Ô27704
+              +----+----+----+----+----+----*----*----
+//XYTEXT 5 06 SWOOSH!
+//XYTEXT 0 16       Duke plummets to a convenient
+//XYTEXT 0 17       holding facility, where he awaits
+//XYTEXT 0 18       his almost certain doom at the
+//XYTEXT 0 19       hands of the evil Rigelatins.
+//FADEIN
+//DELAY 2000
+//FADEOUT
+
+
+
+//GETPAL STORY3.PAL
+		+----+----+----+----+----+----+----+----
+//XYTEXT 27 11 Ô27801
+//XYTEXT 1 4 "Well, I guess I've had it.
+//XYTEXT 1 5  unless those dopes didn't
+//XYTEXT 1 6  remove my secret
+//XYTEXT 1 7  Explodo-Molar.
+//FADEIN
+//DELAY 1100
+//XYTEXT 1 22 Ô27800
+//XYTEXT 13 15 "Oh, man--what a bunch of
+//XYTEXT 13 16  morons!  And look...
+//XYTEXT 13 17  there's a gun locker
+//XYTEXT 13 18  right outside my cell!
+//DELAY 1100
+//FADEOUT
+//GETPAL STORY3.PAL
+//XYTEXT 15 12 Ô27802
+//XYTEXT 11 15 "This is too easy!"
+//FADEIN
+//DELAY 1100
+//END
+
+
+
+&Instructions
+
+//PAGESSTART
+//NOSOUNDS
+//SETCURRENTPAGE
+//FADEOUT
+//LOADRAW KEYBORD1.MNI
+//FADEIN
+//WAIT
+
+//APAGE
+//FADEOUT
+//LOADRAW KEYBORD2.MNI
+//FADEIN
+//WAIT
+
+//APAGE
+//FADEOUT
+//LOADRAW WEAPONS1.MNI
+//FADEIN
+//WAIT
+
+//APAGE
+//FADEOUT
+//LOADRAW WEAPONS2.MNI
+//FADEIN
+//WAIT
+
+//APAGE
+//FADEOUT
+//LOADRAW ITEMS.MNI
+//FADEIN
+//WAIT
+
+//APAGE
+//FADEOUT
+//LOADRAW ITEMS2.MNI
+//FADEIN
+//WAIT
+
+//APAGE
+//FADEOUT
+//LOADRAW prizes2.MNI
+//FADEIN
+//WAIT
+
+
+
+//APAGE
+//FADEOUT
+//LOADRAW HINTS.MNI
+//FADEIN
+//WAIT
+//PAGESEND
+//END
+
+
+
+Now_Ch
+
+//FADEOUT
+//LOADRAW MESSAGE.MNI
+//PAK
+//XYTEXT 5 6 ÛYou have been given a
+//XYTEXT 5 8 Ûrandom weapon.
+//XYTEXT 5 10 ÛEvery item that allows you
+//XYTEXT 5 12 Ûto bypass this level has
+//XYTEXT 5 14 Ûbeen given to you...
+//XYTEXT 5 17 ÛGood Luck...
+//FADEIN
+//WAIT
+//END
+
+&Credits
+
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//PAK
+//XYTEXT 0 0 Ô17700
+//XYTEXT 5 18 Ô14500
+//XYTEXT 22 18 Ô14501
+//FADEIN
+//END
+
+Q_ORDER
+
+//FADEOUT
+//LOADRAW ORDER1.mni
+//PAK
+//XYTEXT 0 0 Ô26400
+//FADEIN
+//END
+
+
+No_Can_Order
+
+//CENTERWINDOW 7 8 36
+//SKLINE
+//CWTEXT Please read the Ordering Info
+//CWTEXT screen to find out how to
+//CWTEXT receive the next three exciting
+//CWTEXT episodes of Duke Nukem II!
+//WAIT
+//END
+
+HYPE
+
+//FADEOUT
+//LOADRAW HY1.MNI
+//FADEIN
+//DELAY 400
+//FADEOUT
+//LOADRAW HY2.MNI
+//FADEIN
+//DELAY 600
+//FADEOUT
+//LOADRAW HY3.MNI
+//FADEIN
+//DELAY 400
+//END
+
+The_Prey
+
+//SETCURRENTPAGE
+//SHIFTWIN -3
+//CENTERWINDOW 7 11 30
+//SKLINE
+//CWTEXT Praying won't help you.
+//CWTEXT Just get out there and
+//CWTEXT blast everything!
+//SKLINE
+//CWTEXT Besides, by ordering the
+//CWTEXT game from Apogee,
+//CWTEXT you get the cheat codes!
+//DELAY 30
+//WAIT
+//END
+
+
+
+V4ORDER
+
+//FADEOUT
+//GETPAL GAMEPAL.PAL
+//XYTEXT 2 4  Thank you for buying and supporting
+//XYTEXT 1 5 Apogee's game software.  Each game we
+//XYTEXT 1 6 create is the work of programmers,
+//XYTEXT 1 7 artists, musicians and project leaders.
+//XYTEXT 1 8 We all depend on your support, and we
+//XYTEXT 1 9 promise to reward you with better games
+//XYTEXT 1 10 in the future.
+
+//XYTEXT 1 12 IMPORTANT:  Please do not distribute
+//XYTEXT 1 13 this game to friends or on bulletin
+//XYTEXT 1 14 boards.  It hurts Apogee's authors,
+//XYTEXT 1 15 and it's illegal. Please do not
+//XYTEXT 1 16 contribute to software piracy.  If
+//XYTEXT 1 17 you'd like to pass on Apogee's games
+//XYTEXT 1 18 to your friends, please use the
+//XYTEXT 1 19 SHAREWARE EDITIONS.  Thank you.
+//FADEIN
+//WAIT
+//END
+
+BAD_GAME
+
+
+//FADEOUT
+//SETCURRENTPAGE
+//GETPAL GAMEPAL.PAL
+//XYTEXT 3 6 Critical file FILE_ID.DIZ missing
+//XYTEXT 3 7 or modified.  If you purchased the
+//XYTEXT 3 8 game from Apogee simply reinstall
+//XYTEXT 3 9 the game.  You can call Apogee at
+//XYTEXT 3 10 (214) 278-5655 or refer to
+//XYTEXT 3 11 "Ordering Info" for more details.
+//FADEIN
+//WAIT
+//END
+
+
+

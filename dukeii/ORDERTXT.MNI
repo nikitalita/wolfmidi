@@ -1,0 +1,475 @@
+
+Ordering_Info
+
+//NOSOUNDS
+
+//PAGESSTART
+//FADEOUT
+//LOADRAW ORDER1.mni
+//ETE
+//XYTEXT 0 0 ï26400
+//FADEIN
+//WAIT
+
+//APAGE
+//FADEOUT
+//LOADRAW ORDER2.mni
+//ETE
+//XYTEXT 0 0 ï26400
+//FADEIN
+//WAIT
+
+//APAGE
+//FADEOUT
+//LOADRAW ORDER3.mni
+//ETE
+//XYTEXT 0 0 ï26400
+//FADEIN
+//WAIT
+
+//APAGE
+//FADEOUT
+//LOADRAW ORDER4.mni
+//ETE
+//XYTEXT 0 0 ï26400
+//FADEIN
+//WAIT
+
+//APAGE
+//FADEOUT
+//LOADRAW ORDER6.mni
+//ETE
+//FADEIN
+//WAIT
+
+//APAGE
+//FADEOUT
+//LOADRAW ORDER7.mni
+//ETE
+//FADEIN
+//WAIT
+
+
+
+//APAGE
+//FADEOUT
+//LOADRAW ORDER5.mni
+//ETE
+//XYTEXT 0 0 ï26400
+//FADEIN
+//WAIT
+
+
+
+
+//APAGE
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//XYTEXT 0 0 ï26400
+//ETE
+
+//XYTEXT 4 6 Australia (1 of 2)
+
+//XYTEXT 4 8 Manaccom
+//XYTEXT 4 9 9 Camford St.
+//XYTEXT 4 10 Milton, Qld. 4064
+
+//XYTEXT 4 12 Price:  CALL for price.
+
+//XYTEXT 4 14 Orders: (07) 368-2366
+//XYTEXT 4 15 Phone:  0055 12685 (inquiries)
+//XYTEXT 4 16 Fax:    (07) 369-7589
+//XYTEXT 4 17 CIS:    76711,1102
+//FADEIN
+//WAIT
+
+
+
+//APAGE
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//XYTEXT 0 0 ï26400
+//ETE
+
+//XYTEXT 4 6 Australia (2 of 2)
+
+//XYTEXT 4 8 BudgetWare
+//XYTEXT 4 9 P.O. Box 496
+//XYTEXT 4 10 Newtown, NSW 2042
+
+//XYTEXT 4 12 Price:  CALL for price.
+
+//XYTEXT 4 14 Orders: 008-022-064
+//XYTEXT 4 15 Phone:  02-519-4233 (inquiries)
+//XYTEXT 4 16 Fax:    02-516-4236
+//XYTEXT 4 17 CIS:    76304,3672
+//FADEIN
+//WAIT
+
+
+
+
+//APAGE
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//XYTEXT 0 0 ï26400
+//ETE
+//XYTEXT 4 6 Canada (1 of 3)
+
+//XYTEXT 4 8 Distant Markets
+//XYTEXT 4 9 Box 1149,
+//XYTEXT 4 10 194 - 3803 Calgary Trail S.
+//XYTEXT 4 11 Edmondton, AL T6J 5M8
+
+//XYTEXT 4 13 Price:  CALL for price.
+
+//XYTEXT 4 15 Orders: 1-800-661-7383
+//XYTEXT 4 16 Phone:  403-436-3009 (inquiries)
+//XYTEXT 4 17 Fax:    1-800-661-9756
+//XYTEXT 4 18 CIS:    71520,1475
+//FADEIN
+//WAIT
+
+
+
+//APAGE
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//XYTEXT 0 0 ï26400
+//ETE
+//XYTEXT 4 6 Canada (2 of 3)
+
+//XYTEXT 4 8 Universal Shareware Alternatives
+//XYTEXT 4 9 P.O. Box 965
+//XYTEXT 4 10 Pointe-Claire Dorval, Quebec
+//XYTEXT 4 11 H9R 4R6
+
+//XYTEXT 4 13 Price:  CALL for price.
+
+//XYTEXT 4 15 Orders: (514) 633-9495
+//XYTEXT 4 16 Fax:    (514) 633-8591
+//FADEIN
+//WAIT
+
+
+
+//APAGE
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//XYTEXT 0 0 ï26400
+//ETE
+//XYTEXT 4 6 Canada (3 of 3)
+
+//XYTEXT 4 8 Simple Software Solutions
+//XYTEXT 4 9 4319 Fraser Street
+//XYTEXT 4 10 Vancouver, BC V5V 4G4
+
+//XYTEXT 4 12 Price:  CALL for price.
+
+//XYTEXT 4 14 Orders: (604) 879-3563
+//XYTEXT 4 15 Fax:    (604) 872-2524
+//FADEIN
+//WAIT
+
+
+
+//APAGE
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//XYTEXT 0 0 ï26400
+//ETE
+//XYTEXT 4 6 Chile
+
+//XYTEXT 4 8 Softmarket S.A.
+//XYTEXT 4 9 Merced 346, Piso 3-D
+//XYTEXT 4 10 Santiago, Chile
+
+//XYTEXT 4 12 Price:  CALL for price.
+
+//XYTEXT 4 14 Orders: (562) 638-1441
+//XYTEXT 4 15 Orders: (562) 638-1448
+//XYTEXT 4 16 Fax:    (562) 633-5345
+//XYTEXT 4 17 BBS:    (562) 638-1114
+//FADEIN
+//WAIT
+
+
+
+//APAGE
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//XYTEXT 0 0 ï26400
+//ETE
+//XYTEXT 4 6 Czech Republic
+
+//XYTEXT 4 8 Jimaz Ltd.
+//XYTEXT 4 9 Hermanova 37
+//XYTEXT 4 10 170 00 Praha 7
+
+//XYTEXT 4 12 Price:  CALL for price.
+
+//XYTEXT 4 14 Orders: +42 2 379 498
+//XYTEXT 4 15 Fax:    +42 2 378 103
+//FADEIN
+//WAIT
+
+
+
+//APAGE
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//XYTEXT 0 0 ï26400
+//ETE
+//XYTEXT 4 6 Denmark
+
+//XYTEXT 4 8 Pro Soft
+//XYTEXT 4 9 Benlose Skel 4 G
+//XYTEXT 4 10 DK-4100 Ringsted Denmark
+
+//XYTEXT 4 12 Price:  CALL for price.
+
+//XYTEXT 4 14 Orders: (+45) 53 61 90 42
+//XYTEXT 4 15 Fax:    (+45) 53 61 93 91
+//XYTEXT 4 16 CIS:    100065,1744
+//FADEIN
+//WAIT
+
+
+
+//APAGE
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//XYTEXT 0 0 ï26400
+//ETE
+//XYTEXT 4 6 France
+
+//XYTEXT 4 8 DP Tool Club
+//XYTEXT 4 9 99 rue Parmentier
+//XYTEXT 4 10 59657 Villeneuve d'Ascq
+
+//XYTEXT 4 12 Price:  CALL for price.
+
+//XYTEXT 4 14 Orders: (33) 20 05 35 66
+//XYTEXT 4 15 Fax:    (33) 20 05 38 27
+//XYTEXT 4 16 CIS:    100012,1410
+//FADEIN
+//WAIT
+
+
+
+//APAGE
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//XYTEXT 0 0 ï26400
+//ETE
+//XYTEXT 4 6 Germany (1 of 2)
+
+//XYTEXT 4 8 CDV-Software
+//XYTEXT 4 9 Postfach 2749
+//XYTEXT 4 10 Neureuter Str. 37B
+//XYTEXT 4 11 76185 Karlsruhe
+
+//XYTEXT 4 13 Price:  CALL for price.
+
+//XYTEXT 4 15 Orders: 0721-97224-0
+//XYTEXT 4 16 Fax:    0721-97224-24
+//XYTEXT 4 17 CIS:    100022,274
+//XYTEXT 4 18 BTX:    *CDV#
+//FADEIN
+//WAIT
+
+
+
+//APAGE
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//XYTEXT 0 0 ï26400
+//ETE
+//XYTEXT 4 6 Germany (2 of 2)
+
+//XYTEXT 4 8 Pearl Agency Deutschland
+//XYTEXT 4 9 Am Kalischacht 4
+//XYTEXT 4 10 D 79426
+
+//XYTEXT 4 12 Price:  CALL for price.
+
+//XYTEXT 4 14 Orders: 07631 360 200
+//XYTEXT 4 15 Fax:    07631 360 444
+//XYTEXT 4 16 BTX:    *Pearl#
+//FADEIN
+//WAIT
+
+
+
+//APAGE
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//XYTEXT 0 0 ï26400
+//ETE
+//XYTEXT 4 6 Italy
+
+//XYTEXT 4 8 M.T. Sistemi S.R.L.
+//XYTEXT 4 9 Via De Gasperi, 4
+//XYTEXT 4 10 20070 S. Martino In Strada
+
+//XYTEXT 4 12 Price:  CALL for price.
+
+//XYTEXT 4 14 Orders: +39 371 475090
+//XYTEXT 4 15 Fax:    +39 371 475090
+//FADEIN
+//WAIT
+
+
+
+//APAGE
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//XYTEXT 0 0 ï26400
+//ETE
+//XYTEXT 4 6 Japan
+
+//XYTEXT 4 8 P&A Company Ltd.
+//XYTEXT 4 9 302 Bellwins, 1367-23
+//XYTEXT 4 10 Nakagami, Akishima
+//XYTEXT 4 11 Tokyo, 196
+
+//XYTEXT 4 13 Price:  CALL for price.
+
+//XYTEXT 4 15 Orders: 0425 4691 41
+//XYTEXT 4 16 Fax:    0425 4691 42
+//XYTEXT 4 17 CIS:    76663,124
+//FADEIN
+//WAIT
+
+
+
+//APAGE
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//XYTEXT 0 0 ï26400
+//ETE
+//XYTEXT 4 6 Mexico
+
+//XYTEXT 4 8 Compu Shareware
+//XYTEXT 4 9 Rio San Angel Delg A. Obregon
+//XYTEXT 4 10 CP 1020
+
+//XYTEXT 4 12 Price:  CALL for price.
+
+//XYTEXT 4 14 Orders: 525 0183 233
+//XYTEXT 4 15 Fax:    525 0188 117
+//XYTEXT 4 16 CIS:    100115,5421
+//FADEIN
+//WAIT
+
+
+
+//APAGE
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//XYTEXT 0 0 ï26400
+//ETE
+//XYTEXT 4 6 Netherlands
+
+//XYTEXT 4 8 HaSa Software
+//XYTEXT 4 9 P.O. Box 414
+//XYTEXT 4 10 9500 AK STADSKANAAL
+
+//XYTEXT 4 12 Price:   CALL for price.
+
+//XYTEXT 4 14 Orders:  +31 5990 50161
+//XYTEXT 4 15 Fax:     +31 5990 50124
+//XYTEXT 4 16 BBS 1:   +31 5990 50212
+//XYTEXT 4 17 BBS 2:   +31 5990 50314
+//XYTEXT 4 18 BBS 3/8: +31 5990 50232
+//XYTEXT 4 19 CIS:     100115,542
+//FADEIN
+//WAIT
+
+
+
+//APAGE
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//XYTEXT 0 0 ï26400
+//ETE
+//XYTEXT 4 6 New Zealand
+
+//XYTEXT 4 8 PC-SIG New Zealand
+//XYTEXT 4 9 P.O. Box 90088
+//XYTEXT 4 10 Victoria Street West
+//XYTEXT 4 11 Auckland, New Zealand
+
+//XYTEXT 4 13 Price:  CALL for price.
+
+//XYTEXT 4 15 Orders: 3600-500
+//XYTEXT 4 16 Fax:    3600-800
+//FADEIN
+//WAIT
+
+
+
+//APAGE
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//XYTEXT 0 0 ï26400
+//ETE
+//XYTEXT 4 6 South Africa
+
+//XYTEXT 4 8 Software People
+//XYTEXT 4 9 P.O. Box 24459
+//XYTEXT 4 10 Innesdale, Pretoria
+//XYTEXT 4 11 South Africa 0031
+
+//XYTEXT 4 13 Price:  CALL for price.
+
+//XYTEXT 4 15 Orders: (012) 333 7789
+//XYTEXT 4 16 BBS:    (012) 73 3104
+//FADEIN
+//WAIT
+
+//APAGE
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//XYTEXT 0 0 ï26400
+//ETE
+//XYTEXT 4 6 United Kingdom (1 of 2)
+
+//XYTEXT 4 8 Transend Services Ltd
+//XYTEXT 4 9 FREEPOST BD2582
+//XYTEXT 4 10 Bradford
+//XYTEXT 4 11 West Yorkshire  BD10 8BR
+
+//XYTEXT 4 13 Price:  CALL for price.
+
+//XYTEXT 4 15 Orders: 0274 622228
+//XYTEXT 4 16 Fax:    0274 620774
+//XYTEXT 4 17 CIS:    100141,1567
+//FADEIN
+//WAIT
+
+//APAGE
+//FADEOUT
+//LOADRAW MESSAGE.mni
+//XYTEXT 0 0 ï26400
+//ETE
+
+
+//XYTEXT 4 6 United Kingdom (2 of 2)
+
+//XYTEXT 4 8 Precision Software
+//XYTEXT 4 9 Unit 3, Valley Court Offices
+//XYTEXT 4 10 Lower Rd.
+//XYTEXT 4 11 Croydon, Near Royston
+//XYTEXT 4 12 Herts., SG8 0HF
+
+//XYTEXT 4 14 Price:  CALL for price.
+
+//XYTEXT 4 16 Orders: 0223 208288
+//XYTEXT 4 17 Fax:    0223 208089
+//XYTEXT 4 18 CIS:    70007,5562
+//FADEIN
+//WAIT
+//PAGESEND
+//END
+
